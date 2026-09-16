@@ -1,7 +1,414 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: #111111;
+  color: #ffffff;
+  font-family: "Inter", "Unbounded", sans-serif;
+}
+
+main {
+  background-image: url("../images/bg_hero.jpg");
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* ==============================
+   HEADER
+============================== */
+
+.header {
+  position: absolute;
+  top: 3rem;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+}
+
+.header-container {
+  display: grid;
+  grid-template-columns: 430px minmax(0, 1fr);
+  width: 1250px;
+  max-width: calc(95% - 90px);
+  height: 134px;
+  margin: 0 auto;
+  border: 2px solid #ffffff;
+}
+
+/* ==============================
+   LOGO
+============================== */
+
+.logo {
+  display: flex;
+  align-items: center;
+  min-width: 0;
+  padding: 0 30px;
+  border-right: 2px solid #ffffff;
+}
+
+.logo-icon {
+  flex: 0 0 auto;
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+}
+
+.logo-name {
+  flex: 0 0 auto;
+  margin-left: 6px;
+  font-family: "Unbounded", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.logo-tagline {
+  width: 135px;
+  margin-left: 50px;
+  font-family: "Unbounded", sans-serif;
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 1;
+}
+
+/* ==============================
+   NAVIGATION
+============================== */
+
+.main-navigation {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  min-width: 0;
+  height: 130px;
+}
+
+.navigation-top,
+.navigation-bottom {
+  display: grid;
+  min-width: 0;
+}
+
+.navigation-top {
+  grid-template-columns:
+    157fr
+    248fr
+    199.58fr
+    155fr
+    67fr;
+}
+
+.navigation-bottom {
+  grid-template-columns:
+    291fr
+    208fr
+    134fr
+    192fr;
+}
+
+.main-navigation a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 0;
+  min-height: 0;
+  border-right: 2px solid #ffffff;
+  border-bottom: 2px solid #ffffff;
+  font-family: "Unbounded", sans-serif;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 1;
+  transition: opacity 0.2s ease;
+}
+
+.main-navigation a:hover {
+  opacity: 0.5;
+}
+
+/* ==============================
+   TOP ROW
+============================== */
+
+.navigation-top a:last-child {
+  border-right: 0;
+}
+
+.navigation-top a {
+  border-bottom: 2px solid #ffffff;
+}
+
+/* ==============================
+   BOTTOM ROW
+============================== */
+
+.navigation-bottom a {
+  border-bottom: 0;
+}
+
+.navigation-bottom a:last-child {
+  border-right: 0;
+}
+
+/* ==============================
+   LANGUAGE ICON
+============================== */
+
+.nav-language img {
+  display: block;
+  width: 17px;
+  height: 16px;
+  object-fit: contain;
+}
+/* ==============================
+   HERO
+============================== */
+
+/* ==============================
+   HERO
+============================== */
+
 .hero-section {
-  min-height: 100vh;
+  min-height: 638px;
   background-image: url("../images/bg_hero.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.hero-container {
+  position: relative;
+  width: 1250px;
+  max-width: calc(100% - 192px);
+  min-height: 638px;
+  margin: 0 auto;
+}
+
+/* ==============================
+   YEAR
+============================== */
+
+.hero-year {
+  position: absolute;
+  top: 350px;
+  right: 890px;
+  display: flex;
+  align-items: flex-start;
+  gap: 25px;
+}
+
+.hero-year span {
+  font-family: "Unbounded", sans-serif;
+  font-size: 27px;
+  line-height: 1;
+  font-weight: 300;
+}
+
+.hero-year p {
+  width: 82px;
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1;
+}
+
+/* ==============================
+   HERO MAIN
+============================== */
+
+.hero-main {
+  position: absolute;
+  top: 430px;
+  right: 370px;
+  display: block;
+  width: 709px;
+  height: 134px;
+}
+
+/* ==============================
+   HERO HEADING
+============================== */
+
+.hero-heading {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 709px;
+}
+
+.hero-decoration {
+  position: absolute;
+  top: -40px;
+  right: 265px;
+  width: 147px;
+  height: 60px;
+  object-fit: contain;
+  object-position: center;
+}
+
+.hero-heading h1 {
+  margin: 0;
+  font-family: "Unbounded", sans-serif;
+  font-size: 54px;
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: 0;
+}
+
+.hero-heading h1 span {
+  color: #d78df0;
+}
+
+/* ==============================
+   HERO SUBTITLE
+============================== */
+
+.hero-subtitle {
+  position: absolute;
+  top: 70px;
+  left: 336px;
+  width: 300px;
+  margin: 0;
+  font-family: "Unbounded", sans-serif;
+  font-size: 16px;
+  font-weight: 350;
+  line-height: 1;
+}
+
+/* ==============================
+   HERO MESSAGE
+============================== */
+
+.hero-message {
+  position: absolute;
+  top: 430px; /* Naikkan dari 552px */
+  right: -30px;
+  left: auto;
+  width: 216px;
+}
+
+.hero-message-icon img {
+  display: block;
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+.hero-message p {
+  width: 216px;
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1;
+}
+
+/* ==============================
+   HERO LINKS
+============================== */
+/* ==============================
+   HERO LINKS / FOOTER
+============================== */
+
+.hero-links {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 65px;
+
+  /* Full width */
+  width: 100%;
+  max-width: none;
+
+  margin: 0;
+
+  /* Background transparan seperti Figma */
+  background: rgba(0, 0, 0, 0.6);
+
+  padding: 55px 7.7% 45px;
+}
+
+.hero-links a {
+  position: relative;
+  padding-bottom: 18px;
+
+  font-family: "Unbounded", sans-serif;
+  font-size: 15px;
+  color: #d5a6e8;
+}
+
+.hero-links a::after {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  height: 1px;
+
+  background: rgba(255, 255, 255, 0.75);
+
+  content: "";
+}
+
+@media (max-width: 767px) {
+  .header {
+    top: 20px;
+  }
+
+  .header-container {
+    width: calc(100% - 40px);
+    height: auto;
+    grid-template-columns: 1fr;
+  }
+
+  .logo {
+    min-height: 70px;
+    border-right: 0;
+  }
+
+  .main-navigation {
+    display: none;
+  }
+
+  .hero-section {
+    min-height: 638px;
+    background: transparent;
+  }
+
+  .hero-container {
+    width: calc(100% - 40px);
+    min-height: 600px;
+  }
+
+  .hero-year {
+    top: 340px;
+  }
+
+  .hero-main {
+    top: 320px;
+    display: block;
+  }
+
+  .hero-subtitle {
+    margin-top: 15px;
+  }
+
+  .hero-message {
+    top: 478px;
+    right: 24px;
+    width: 216px;
+  }
 }
