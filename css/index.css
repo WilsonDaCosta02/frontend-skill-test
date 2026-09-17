@@ -698,3 +698,109 @@ a {
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+/* ==============================
+   SERVICES SECTION
+============================== */
+
+.services-section {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 96px;
+  padding-bottom: 76px;
+  background: #111111;
+  box-sizing: border-box;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 100%;
+  max-width: 1249px;
+  height: 576px;
+  margin: 0 auto;
+  overflow: hidden;
+  gap: 0;
+}
+
+/* CARD */
+
+.service-item {
+  position: relative;
+  min-width: 0;
+  height: 288px;
+  padding: 0;
+  overflow: hidden;
+  background: #111111;
+}
+
+/* BACKGROUND IMAGE */
+.service-item::before {
+  content: "";
+  position: absolute;
+  inset: -100%;
+  z-index: 0;
+
+  background-image: url("../images/bg_hero2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  transform-origin: center;
+}
+
+/* CARD 01 */
+.service-01::before {
+  transform: translateX(-120px) rotate(0deg) scale(0.9);
+}
+
+/* CARD 02 */
+.service-02::before {
+  transform: rotate(90deg) scale(0.65);
+}
+
+/* CARD 03 */
+.service-03::before {
+  transform: rotate(180deg) scale(0.65);
+}
+
+/* CARD 04 */
+.service-04::before {
+  transform: rotate(-90deg) scale(0.65);
+}
+
+/* NUMBER */
+
+.service-number {
+  position: absolute;
+  top: 96px;
+  left: 55px;
+  z-index: 2;
+
+  font-family: "Unbounded", sans-serif;
+  font-size: 40px;
+  font-weight: 300;
+  line-height: 100%;
+  letter-spacing: 0;
+  color: #ffffff;
+}
+
+/* DESCRIPTION */
+
+.service-item p {
+  position: absolute;
+  top: 192px;
+  left: 48px;
+  z-index: 2;
+
+  width: 276px;
+  margin: 0;
+
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 100%;
+  letter-spacing: 0;
+  color: #ffffff;
+}
