@@ -436,7 +436,7 @@ a {
   max-width: none;
 
   margin: 0;
-  padding: 55px 7.7% 45px;
+  padding: 70px 7.7% 60px;
 
   background: rgba(0, 0, 0, 0.6);
 }
@@ -803,4 +803,317 @@ a {
   line-height: 100%;
   letter-spacing: 0;
   color: #ffffff;
+}
+
+/* ========================================
+   EXPERTISE SECTION
+======================================== */
+
+.expertise-section {
+  position: relative;
+  width: 100%;
+  min-height: 900px;
+  padding: 110px 6.7% 100px;
+  background: #111111;
+  color: #ffffff;
+  font-family: "Inter", sans-serif;
+  box-sizing: border-box;
+}
+
+/* ========================================
+   TITLE
+======================================== */
+
+.expertise-heading {
+  position: relative;
+  width: max-content;
+  margin-bottom: 75px;
+}
+
+.expertise-heading h2 {
+  margin: 0;
+  font-family: "Unbounded", sans-serif;
+  font-size: 46px;
+  font-weight: 300;
+  line-height: 100%;
+  letter-spacing: 0;
+  transform: translateX(10px);
+}
+
+.expertise-heading h2 span {
+  display: inline;
+  color: #cbdcf0;
+}
+
+.expertise-heading h2 strong {
+  font-weight: 300;
+  background: linear-gradient(
+    90deg,
+    #d9eaff 0%,
+    #f18de8 5%,
+    #f18de8 45%,
+    #f18de8 65%,
+    #bd7cff 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.expertise-heading img {
+  position: absolute;
+  width: 202px;
+  height: 60px;
+  top: -40px;
+  right: 20px;
+}
+
+/* ========================================
+   TOP CONTENT
+======================================== */
+
+.expertise-content {
+  display: grid;
+  grid-template-columns: 1fr 2.5fr 2.5fr;
+  column-gap: 55px;
+  width: 100%;
+  max-width: 1150px;
+  margin-left: 0;
+  margin-bottom: 30px;
+}
+
+.expertise-year {
+  padding-top: 5px;
+  font-family: "Inter", sans-serif;
+  font-size: 12px;
+  line-height: 100%;
+  color: #c8a4ed;
+  transform: translateX(10px);
+}
+
+.expertise-column:nth-child(2) {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 100%;
+  color: #eeeeee;
+  width: 373px;
+}
+
+/* Kolom kanan */
+.expertise-column:nth-child(3) {
+  width: 432px;
+  max-width: 432px;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 100%;
+  color: #eeeeee;
+}
+
+/* ========================================
+   TABS
+======================================== */
+
+.expertise-tabs {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  width: calc(100% - 20%);
+  margin-left: 20%;
+
+  border: 1px solid #eeeeee;
+  box-sizing: border-box;
+}
+
+.expertise-tab {
+  display: flex;
+  align-items: center;
+
+  min-height: 136px;
+  padding: 0 48px;
+
+  border-right: 1px solid #eeeeee;
+
+  font-family: "Unbounded", sans-serif;
+  font-size: 32px;
+  font-weight: 300;
+
+  color: #51485d;
+  box-sizing: border-box;
+}
+
+.expertise-tab:last-child {
+  border-right: none;
+}
+
+.expertise-tab.active {
+  color: #d7c4ee;
+}
+
+/* ========================================
+   TAB CONTENT
+======================================== */
+
+.expertise-tab-content {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+
+  width: calc(100% - 20%);
+  margin-left: 20%;
+
+  height: 220px;
+  min-height: 0;
+
+  border: 1px solid #eeeeee;
+  border-top: none;
+}
+
+.expertise-orb-card {
+  padding: 48px 48px;
+  box-sizing: border-box;
+}
+
+.expertise-orb-card img {
+  display: block;
+  width: 100px;
+  height: 100px;
+  margin-bottom: 40px;
+  object-fit: contain;
+  transform: translate(-25px, -40px);
+}
+
+.expertise-orb-card p {
+  max-width: 180px;
+
+  margin: 0;
+
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 100%;
+
+  color: #eeeeee;
+  transform: translateY(-80px);
+}
+
+.expertise-tab-description {
+  width: 334px;
+  transform: translateY(20px);
+  max-width: 334px;
+
+  padding: 90px 0 25px 0;
+
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 100%;
+  color: #eeeeee;
+
+  box-sizing: border-box;
+}
+/* ========================================
+   BOTTOM CONTENT
+======================================== */
+
+.expertise-bottom {
+  width: 432px;
+  max-width: 432px;
+  margin-left: 20%;
+  margin-top: 25px;
+
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 100%;
+  color: #eeeeee;
+}
+
+/* ========================================
+   DECORATION
+======================================== */
+
+.expertise-star {
+  position: absolute;
+  width: 29px;
+  height: 29px;
+  left: 7.7%;
+  bottom: 270px;
+}
+
+/* ========================================
+   RESPONSIVE
+======================================== */
+
+@media (max-width: 768px) {
+  .expertise-section {
+    padding: 70px 6% 70px;
+  }
+
+  .expertise-heading {
+    width: 100%;
+    margin-bottom: 45px;
+  }
+
+  .expertise-heading h2 {
+    font-size: 27px;
+    letter-spacing: -0.8px;
+  }
+
+  .expertise-heading img {
+    width: 90px;
+    top: -18px;
+    right: 0;
+  }
+
+  .expertise-content {
+    grid-template-columns: 1fr;
+    row-gap: 25px;
+    margin-bottom: 35px;
+  }
+
+  .expertise-year {
+    margin-bottom: 0;
+  }
+
+  .expertise-column {
+    font-size: 11px;
+  }
+
+  .expertise-tabs,
+  .expertise-tab-content {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .expertise-tab {
+    min-height: 65px;
+    padding: 0 12px;
+    font-size: 13px;
+  }
+
+  .expertise-tab-content {
+    grid-template-columns: 1fr;
+  }
+
+  .expertise-orb-card {
+    padding: 25px;
+  }
+
+  .expertise-tab-description {
+    padding: 0 25px 25px;
+  }
+
+  .expertise-bottom {
+    width: 100%;
+    margin-left: 0;
+    font-size: 10px;
+  }
+
+  .expertise-union {
+    position: relative;
+    left: 0;
+    bottom: auto;
+    margin-top: 45px;
+  }
 }
