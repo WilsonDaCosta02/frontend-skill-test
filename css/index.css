@@ -1117,3 +1117,213 @@ a {
     margin-top: 45px;
   }
 }
+
+/* ========================================
+   EXPERIENCE SECTION
+======================================== */
+
+.experience-section {
+  width: 100%;
+  background: #111111;
+  color: #eeeeee;
+  font-family: "Inter", sans-serif;
+}
+
+/* ========================================
+   TOP GRADIENT
+======================================== */
+
+.experience-hero {
+  position: relative;
+  min-height: 503px;
+  padding: 110px 6.7% 70px;
+  box-sizing: border-box;
+
+  background: linear-gradient(
+    110deg,
+    #075071 0%,
+    #453269 28%,
+    #ff982d 51%,
+    #000000 72%,
+    #16466d 100%
+  );
+}
+
+.experience-top-links {
+  position: absolute;
+  top: 28px;
+  left: 7.1%;
+  right: 7.5%;
+
+  display: flex;
+  justify-content: space-between;
+
+  font-family: "Inter", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.25;
+  color: #eeeeee;
+}
+
+.experience-top-links p:first-child {
+  transform: translateX(0);
+
+  background: linear-gradient(90deg, #c6f1f5 0%, #f981e5 50%, #bd7cff 100%);
+
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.experience-top-links p:first-child {
+  transform: translateX(0);
+}
+
+.experience-top-links p:nth-child(2) {
+  transform: translateX(210px);
+}
+
+.experience-top-links p:nth-child(3) {
+  transform: translateX(-100px);
+}
+
+/* JUDUL */
+
+.experience-heading {
+  position: absolute;
+  left: 7%;
+  bottom: 55px;
+}
+
+.experience-heading h2 {
+  margin: 0;
+  font-family: "Unbounded", sans-serif;
+  font-size: 54px;
+  font-weight: 300;
+  line-height: 1.2;
+  letter-spacing: -1.5px;
+}
+
+.experience-heading h2 span {
+  background: linear-gradient(90deg, #d9eaff 0%, #f18de8 65%, #bd7cff 100%);
+
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* WAVE */
+
+.experience-heading img {
+  position: absolute;
+  width: 115px;
+  height: 40px;
+  top: -20px;
+  right: 0;
+}
+
+/* TEKS KANAN */
+
+.experience-intro {
+  position: absolute;
+
+  width: 350px;
+  height: 85px;
+
+  right: 8.5%;
+  bottom: 55px;
+
+  margin: 0;
+
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 0;
+
+  color: #d9bce9;
+}
+
+/* ========================================
+   BOTTOM CONTENT
+======================================== */
+
+.experience-content {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr 1.5fr;
+  column-gap: 55px;
+
+  min-height: 200px;
+  padding: 75px 6.7% 40px;
+
+  box-sizing: border-box;
+  background: #111111;
+}
+
+/* DECORATION */
+
+.experience-decoration img {
+  width: 60px;
+  height: auto;
+}
+
+/* KOLOM TEKS */
+
+.experience-column {
+  width: 432px;
+  max-width: 432px;
+  margin: 0;
+  padding: 0;
+
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 0;
+
+  color: #e4e4e4;
+}
+
+@media (max-width: 768px) {
+  .experience-hero {
+    min-height: 500px;
+    padding: 60px 6%;
+  }
+
+  .experience-heading {
+    left: 6%;
+    bottom: 60px;
+  }
+
+  .experience-heading h2 {
+    font-size: 28px;
+    letter-spacing: -0.8px;
+  }
+
+  .experience-heading img {
+    width: 65px;
+    top: -15px;
+  }
+
+  .experience-intro {
+    width: 230px;
+    right: 6%;
+    bottom: 60px;
+    font-size: 10px;
+  }
+
+  .experience-content {
+    grid-template-columns: 1fr;
+    row-gap: 35px;
+    padding: 50px 6%;
+  }
+
+  .experience-decoration img {
+    width: 45px;
+  }
+
+  .experience-column {
+    max-width: 100%;
+    font-size: 11px;
+  }
+}
