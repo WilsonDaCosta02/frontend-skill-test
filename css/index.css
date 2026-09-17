@@ -533,3 +533,168 @@ a {
     width: 216px;
   }
 }
+
+/* ==============================
+   ABOUT SECTION
+============================== */
+
+.about-section {
+  position: relative;
+  min-height: 650px;
+  background: #111111;
+  overflow: hidden;
+}
+
+/* YEAR */
+
+.about-year {
+  position: absolute;
+  top: 145px;
+  left: 70px;
+
+  font-family: "Inter", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+
+  background: linear-gradient(
+    90deg,
+    #c6f1f7,
+    #d9a1d2,
+    #f983e9,
+    rgba(184, 119, 255, 1),
+    #c6f1f7
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* TOP TEXT */
+
+.about-top-text {
+  position: absolute;
+  top: 80px;
+  left: 373px;
+
+  width: 432px;
+  margin: 0;
+
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 100%;
+  color: #ffffff;
+}
+
+/* TITLE */
+
+.about-title {
+  position: absolute;
+  top: 220px;
+  left: 69px;
+}
+
+.about-title h2 {
+  width: 710px;
+  margin: 0;
+
+  font-family: "Unbounded", sans-serif;
+  font-size: 54px;
+  font-weight: 300;
+  line-height: 100%;
+  letter-spacing: 0;
+
+  background: linear-gradient(90deg, #c6eaf7 0%, #f98de9 45%, #b877ff 100%);
+
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* WAVE DECORATION */
+
+.about-title img {
+  display: block;
+
+  width: 243px;
+  height: 60px;
+  margin-top: -10px;
+
+  object-fit: contain;
+  object-position: left center;
+}
+
+/* BOTTOM TEXT */
+
+.about-bottom-text {
+  position: absolute;
+  top: 400px;
+  left: 373px;
+
+  width: 432px;
+  margin: 0;
+
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 100%;
+  color: #ffffff;
+}
+
+/* ICO UNION - STAR DECORATION */
+
+.about-section > img[alt="Decoration"] {
+  position: absolute;
+  top: 490px;
+  left: 70px;
+
+  width: 76, 62px;
+  height: 28, 13px;
+
+  object-fit: contain;
+}
+
+/* ORB CARD */
+
+.about-orb-card {
+  position: absolute;
+  top: 154px;
+  right: 121px;
+
+  width: 241.19px;
+  height: 276px;
+
+  background: #202020;
+}
+
+/* ORB IMAGE */
+
+.about-orb {
+  position: absolute;
+  top: 0;
+  left: 13px;
+
+  width: 216.17px;
+  height: 211px;
+
+  object-fit: contain;
+}
+
+/* SINCE TEXT */
+
+.about-orb-card span {
+  position: absolute;
+  top: 226px;
+  left: 88px;
+
+  margin: 0;
+
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  line-height: 100%;
+
+  background: linear-gradient(90deg, #d8eaff, #f983e9);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
