@@ -172,9 +172,6 @@ a {
   height: 16px;
   object-fit: contain;
 }
-/* ==============================
-   HERO
-============================== */
 
 /* ==============================
    HERO
@@ -203,26 +200,81 @@ a {
 .hero-year {
   position: absolute;
   top: 350px;
-  right: 890px;
+  left: 0;
+  right: auto;
+
   display: flex;
   align-items: flex-start;
-  gap: 25px;
+  gap: 75px;
+
+  width: max-content;
 }
 
-.hero-year span {
+.hero-year .year-gradient {
+  flex: 0 0 145px;
+
   font-family: "Unbounded", sans-serif;
   font-size: 27px;
-  line-height: 1;
   font-weight: 300;
+  line-height: 1;
+
+  background: linear-gradient(
+    90deg,
+    #d9eaff 0%,
+    #f18de8 40%,
+    #bd7cff 70%,
+    #c6d7ed 100%
+  );
+
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
+/* TEXT HI THERE */
+
 .hero-year p {
-  width: 82px;
+  flex: 0 0 210px;
+  width: 210px;
+
   margin: 0;
+
   font-family: "Inter", sans-serif;
   font-size: 12px;
   font-weight: 400;
-  line-height: 1;
+  line-height: 1.25;
+}
+
+/* TEXT GRADIENT */
+
+.hero-year p span {
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* hi there, */
+
+.text-hi {
+  background-image: linear-gradient(90deg, #d8eaff 0%, #e8a1e9 100%);
+}
+
+/* let's */
+
+.text-lets {
+  background-image: linear-gradient(90deg, #e985e8 0%, #bd7cff 100%);
+}
+
+/* get */
+
+.text-get {
+  background-image: linear-gradient(90deg, #d8eaff 0%, #e3c6f5 100%);
+}
+
+/* started! */
+
+.text-started {
+  background-image: linear-gradient(90deg, #e88be9 0%, #bd7cff 100%);
 }
 
 /* ==============================
@@ -268,8 +320,48 @@ a {
   letter-spacing: 0;
 }
 
+/* ==============================
+   HERO TEXT GRADIENT
+============================== */
+
 .hero-heading h1 span {
-  color: #d78df0;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Influence */
+
+.text-influence {
+  background-image: linear-gradient(
+    90deg,
+    #c6eaf7 0%,
+    #d8c7f5 35%,
+    #e98ce9 75%,
+    #f078e7 100%
+  );
+}
+
+/* Your */
+
+.text-your {
+  background-image: linear-gradient(
+    90deg,
+    #e987e8 0%,
+    #d982f2 50%,
+    #b77bff 100%
+  );
+}
+
+/* Audience */
+
+.text-audience {
+  background-image: linear-gradient(
+    90deg,
+    #d3e6f6 0%,
+    #e7c9f4 40%,
+    #e982e8 100%
+  );
 }
 
 /* ==============================
@@ -294,7 +386,7 @@ a {
 
 .hero-message {
   position: absolute;
-  top: 430px; /* Naikkan dari 552px */
+  top: 430px;
   right: -30px;
   left: auto;
   width: 216px;
@@ -311,15 +403,25 @@ a {
 .hero-message p {
   width: 216px;
   margin: 0;
+
   font-family: "Inter", sans-serif;
   font-size: 14px;
   font-weight: 400;
-  line-height: 1;
+  line-height: 1.2;
+
+  background: linear-gradient(
+    90deg,
+    #c6f1f7 0%,
+    #f983e9 40%,
+    #b877ff 72%,
+    #c2e9cd 100%
+  );
+
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-/* ==============================
-   HERO LINKS
-============================== */
 /* ==============================
    HERO LINKS / FOOTER
 ============================== */
@@ -329,13 +431,11 @@ a {
   grid-template-columns: repeat(4, 1fr);
   gap: 65px;
 
-  /* Full width */
   width: 100%;
   max-width: none;
 
   margin: 0;
 
-  /* Background transparan seperti Figma */
   background: rgba(0, 0, 0, 0.6);
 
   padding: 55px 7.7% 45px;
@@ -362,6 +462,10 @@ a {
 
   content: "";
 }
+
+/* ==============================
+   RESPONSIVE
+============================== */
 
 @media (max-width: 767px) {
   .header {
