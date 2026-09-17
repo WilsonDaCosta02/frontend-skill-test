@@ -435,10 +435,9 @@ a {
   max-width: none;
 
   margin: 0;
+  padding: 55px 7.7% 45px;
 
   background: rgba(0, 0, 0, 0.6);
-
-  padding: 55px 7.7% 45px;
 }
 
 .hero-links a {
@@ -447,8 +446,26 @@ a {
 
   font-family: "Unbounded", sans-serif;
   font-size: 15px;
-  color: #d5a6e8;
+  font-weight: 400;
+  line-height: 1;
+
+  background: linear-gradient(
+    90deg,
+    #c6f1f7 0%,
+    #f983e9 15%,
+    #c2e9cd 65%,
+    #f983e9 25%,
+    #c2e9cd 65%,
+    #b877ff 55%,
+    #c2e9cd 100%
+  );
+
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
+
+/* Garis putih di bawah teks */
 
 .hero-links a::after {
   position: absolute;
@@ -462,7 +479,6 @@ a {
 
   content: "";
 }
-
 /* ==============================
    RESPONSIVE
 ============================== */
