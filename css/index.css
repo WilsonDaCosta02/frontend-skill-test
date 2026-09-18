@@ -487,59 +487,6 @@ a {
 
   content: "";
 }
-/* ==============================
-   RESPONSIVE
-============================== */
-
-@media (max-width: 767px) {
-  .header {
-    top: 20px;
-  }
-
-  .header-container {
-    width: calc(100% - 40px);
-    height: auto;
-    grid-template-columns: 1fr;
-  }
-
-  .logo {
-    min-height: 70px;
-    border-right: 0;
-  }
-
-  .main-navigation {
-    display: none;
-  }
-
-  .hero-section {
-    min-height: 638px;
-    background: transparent;
-  }
-
-  .hero-container {
-    width: calc(100% - 40px);
-    min-height: 600px;
-  }
-
-  .hero-year {
-    top: 340px;
-  }
-
-  .hero-main {
-    top: 320px;
-    display: block;
-  }
-
-  .hero-subtitle {
-    margin-top: 15px;
-  }
-
-  .hero-message {
-    top: 478px;
-    right: 24px;
-    width: 216px;
-  }
-}
 
 /* ==============================
    ABOUT SECTION
@@ -1836,5 +1783,996 @@ a {
 
   .footer-navigation a:nth-child(5) {
     border-right: 1px solid #eeeeee;
+  }
+}
+
+/* ========================================
+   MOBILE RESPONSIVE
+   MAX WIDTH: 767PX
+======================================== */
+
+@media (max-width: 767px) {
+  html,
+  body {
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  body {
+    font-size: 1rem;
+  }
+
+  main {
+    width: 100%;
+    background-size: auto 100%;
+  }
+
+  /* ========================================
+     MOBILE HEADER
+  ======================================== */
+
+  .header {
+    top: 1.25rem;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+  }
+
+  .header-container {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: calc(100% - 2.5rem);
+    max-width: none;
+    height: 3.5rem;
+    margin: 0 auto;
+    border: 2px solid #ffffff;
+  }
+
+  .logo {
+    min-width: 0;
+    padding: 0 0.75rem;
+    border-right: 2px solid #ffffff;
+  }
+
+  .logo-icon {
+    width: 1.75rem;
+    height: 1.75rem;
+  }
+
+  .logo-name {
+    margin-left: 0.3rem;
+    font-size: 0.7rem;
+  }
+
+  .logo-tagline {
+    display: none;
+  }
+
+  .mobile-menu-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0;
+    background: transparent;
+    color: #ffffff;
+    font-family: "Inter", sans-serif;
+    font-size: 0.7rem;
+    cursor: pointer;
+  }
+
+  .main-navigation {
+    display: none;
+    position: absolute;
+    top: 4.6rem;
+    left: 0;
+    width: 100%;
+    height: auto;
+    padding: 0;
+    background: #111111;
+  }
+
+  .menu-open .main-navigation {
+    display: block;
+  }
+
+  .mobile-close-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: -4.6rem;
+    right: 0;
+    width: 50%;
+    height: 3.5rem;
+    border: 0;
+    border-left: 2px solid #ffffff;
+    background: transparent;
+    color: #ffffff;
+    font-family: "Inter", sans-serif;
+    font-size: 0.7rem;
+    cursor: pointer;
+  }
+
+  .navigation-top,
+  .navigation-bottom {
+    display: contents;
+  }
+
+  .main-navigation a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 3.4rem;
+    border: 2px solid #ffffff;
+    border-bottom: 0;
+    background: #111111;
+    font-family: "Inter", sans-serif;
+    font-size: 0.7rem;
+  }
+
+  .main-navigation a:last-child {
+    border-bottom: 2px solid #ffffff;
+  }
+
+  .nav-language img {
+    width: 1rem;
+    height: 1rem;
+  }
+
+  /* ========================================
+     HERO
+  ======================================== */
+
+  .hero-section {
+    min-height: 36.3rem;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .hero-container {
+    width: 100%;
+    max-width: none;
+    min-height: 36.3rem;
+    margin: 0;
+  }
+
+  .hero-year {
+    top: 9.6rem;
+    left: 51%;
+    display: flex;
+    gap: 0.7rem;
+    width: max-content;
+  }
+
+  .hero-year .year-gradient {
+    flex: 0 0 auto;
+    font-size: 1.9rem;
+  }
+
+  .hero-year p {
+    flex: 0 0 auto;
+    width: 5rem;
+    font-size: 0.6rem;
+    line-height: 1.25;
+    transform: none;
+  }
+
+  .hero-main {
+    top: 15.7rem;
+    right: auto;
+    left: 1.25rem;
+    width: calc(100% - 2.5rem);
+    height: auto;
+  }
+
+  .hero-heading {
+    position: relative;
+    width: 100%;
+  }
+
+  .hero-heading h1 {
+    font-size: 2rem;
+    line-height: 1.15;
+    letter-spacing: -0.05rem;
+  }
+
+  .hero-decoration {
+    top: -0.8rem;
+    right: 1.8rem;
+    width: 5rem;
+    height: auto;
+  }
+
+  .hero-subtitle {
+    position: relative;
+    top: auto;
+    left: auto;
+    width: 100%;
+    margin-top: 0.6rem;
+    font-size: 0.7rem;
+    line-height: 1.1;
+  }
+
+  .hero-message {
+    top: 26.2rem;
+    right: auto;
+    left: 1.25rem;
+    width: calc(100% - 2.5rem);
+  }
+
+  .hero-message-icon img {
+    width: 1.6rem;
+    height: 1.6rem;
+    margin-bottom: 0.6rem;
+  }
+
+  .hero-message p {
+    width: 100%;
+    font-size: 0.8rem;
+    line-height: 1.3;
+  }
+
+  /* ========================================
+     HERO LINKS
+  ======================================== */
+
+  .hero-links {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2.2rem;
+    width: 100%;
+    padding: 2.8rem 1.25rem 2.5rem;
+  }
+
+  .hero-links a {
+    padding-bottom: 0.7rem;
+    font-size: 0.7rem;
+  }
+
+  /* ========================================
+     ABOUT SECTION
+  ======================================== */
+
+  .about-section {
+    display: flex;
+    flex-direction: column;
+    min-height: auto;
+    padding: 3.2rem 1.25rem 3.5rem;
+  }
+
+  .about-year {
+    position: static;
+    order: 1;
+    margin-bottom: 1.5rem;
+    font-size: 0.7rem;
+  }
+
+  .about-top-text {
+    position: static;
+    order: 0;
+    width: 100%;
+    font-size: 0.8rem;
+    line-height: 1.25;
+  }
+
+  .about-title {
+    position: static;
+    order: 2;
+    margin-top: 1.8rem;
+  }
+
+  .about-title h2 {
+    width: 100%;
+    font-size: 1.8rem;
+    line-height: 1.3;
+  }
+
+  .about-title img {
+    width: 7rem;
+    height: auto;
+    margin-top: -0.2rem;
+  }
+
+  .about-section > img[alt="Decoration"] {
+    position: static;
+    order: 3;
+    width: 2rem;
+    height: auto;
+    margin-top: 2.5rem;
+  }
+
+  .about-bottom-text {
+    position: static;
+    order: 4;
+    width: 100%;
+    margin-top: 1rem;
+    font-size: 0.8rem;
+    line-height: 1.25;
+  }
+
+  .about-orb-card {
+    display: none;
+  }
+
+  /* ========================================
+     SERVICES
+  ======================================== */
+
+  .services-section {
+    width: 100%;
+    padding: 0 0.6rem 1.25rem;
+  }
+
+  .services-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+    height: auto;
+  }
+
+  .service-item {
+    height: 10.4rem;
+  }
+
+  .service-number {
+    top: 1.8rem;
+    left: 1.25rem;
+    font-size: 2rem;
+  }
+
+  .service-item p {
+    top: 5.6rem;
+    left: 1.25rem;
+    width: calc(100% - 2.5rem);
+    font-size: 0.8rem;
+    line-height: 1.2;
+  }
+
+  /* ========================================
+     EXPERTISE
+  ======================================== */
+
+  .expertise-section {
+    min-height: auto;
+    padding: 3.5rem 1.25rem;
+  }
+
+  .expertise-heading {
+    width: 100%;
+    margin-bottom: 2.8rem;
+  }
+
+  .expertise-heading h2 {
+    font-size: 1.8rem;
+    line-height: 1.25;
+    transform: none;
+  }
+
+  .expertise-heading img {
+    top: auto;
+    right: 2rem;
+    bottom: -1.3rem;
+    width: 6.5rem;
+    height: auto;
+  }
+
+  .expertise-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 100%;
+    margin: 0;
+  }
+
+  .expertise-year {
+    padding: 0;
+    font-size: 0.7rem;
+    transform: none;
+  }
+
+  .expertise-column,
+  .expertise-column:nth-child(2),
+  .expertise-column:nth-child(3) {
+    width: 100%;
+    max-width: none;
+    font-size: 0.8rem;
+    line-height: 1.25;
+  }
+
+  .expertise-tabs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+    margin: 2rem 0 0;
+  }
+
+  .expertise-tab {
+    min-height: 3.3rem;
+    padding: 0 0.3rem;
+    justify-content: center;
+    font-size: 0.8rem;
+  }
+
+  .expertise-tab-content {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0;
+  }
+
+  .expertise-orb-card {
+    padding: 1.5rem;
+  }
+
+  .expertise-orb-card img {
+    width: 3rem;
+    height: 3rem;
+    margin-bottom: 1rem;
+    transform: none;
+  }
+
+  .expertise-orb-card p {
+    max-width: 100%;
+    font-size: 0.8rem;
+    line-height: 1.25;
+  }
+
+  .expertise-tab-description {
+    width: 100%;
+    max-width: none;
+    padding: 1.5rem;
+    font-size: 0.8rem;
+    line-height: 1.25;
+    transform: none;
+  }
+
+  .expertise-bottom {
+    width: 100%;
+    max-width: none;
+    margin: 2rem 0 0;
+    font-size: 0.8rem;
+    line-height: 1.25;
+  }
+
+  .expertise-star {
+    position: static;
+    width: 2rem;
+    height: auto;
+    margin-top: 2rem;
+  }
+
+  /* ========================================
+     EXPERIENCE
+  ======================================== */
+
+  .experience-hero {
+    min-height: 23.5rem;
+    padding: 3rem 1.25rem;
+  }
+
+  .experience-top-links {
+    top: 2.2rem;
+    left: 1.25rem;
+    right: 1.25rem;
+    font-size: 0.6rem;
+  }
+
+  .experience-top-links p:nth-child(2),
+  .experience-top-links p:nth-child(3) {
+    transform: none;
+  }
+
+  .experience-heading {
+    left: 1.25rem;
+    bottom: 3.8rem;
+  }
+
+  .experience-heading h2 {
+    font-size: 1.8rem;
+    line-height: 1.25;
+    letter-spacing: -0.05rem;
+  }
+
+  .experience-heading img {
+    top: -1rem;
+    right: 0;
+    width: 5.5rem;
+    height: auto;
+  }
+
+  .experience-intro {
+    right: 1.25rem;
+    bottom: 1.5rem;
+    width: 90%;
+    height: auto;
+    font-size: 0.7rem;
+    line-height: 1.2;
+  }
+
+  .experience-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    min-height: auto;
+    padding: 3rem 1.25rem;
+  }
+
+  .experience-decoration img {
+    width: 3.5rem;
+  }
+
+  .experience-column {
+    width: 100%;
+    max-width: none;
+    font-size: 0.8rem;
+    line-height: 1.25;
+  }
+
+  /* ========================================
+     PROJECTS
+  ======================================== */
+
+  .projects-section {
+    min-height: auto;
+    padding: 3rem 1.25rem 2rem;
+  }
+
+  .projects-heading {
+    margin-bottom: 2rem;
+  }
+
+  .projects-heading h2 {
+    width: 100%;
+    height: auto;
+    font-size: 1.8rem;
+    line-height: 1.25;
+    letter-spacing: -0.05rem;
+  }
+
+  .projects-heading img {
+    top: -1.5rem;
+    left: 0;
+    width: 5rem;
+    height: auto;
+  }
+
+  .projects-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+    height: auto;
+  }
+
+  .project-card {
+    height: 13rem;
+    padding: 1.25rem;
+  }
+
+  .project-category {
+    margin-bottom: 2rem;
+    font-size: 0.6rem;
+  }
+
+  .project-card h3 {
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+    line-height: 1.2;
+  }
+
+  .project-card p {
+    width: 100%;
+    height: auto;
+    font-size: 0.7rem;
+    line-height: 1.2;
+  }
+
+  .projects-navigation {
+    width: 9.5rem;
+    height: 2.5rem;
+    margin-top: 1.5rem;
+  }
+
+  .project-arrow {
+    width: 2.2rem;
+    height: 2.5rem;
+    font-size: 1.8rem;
+  }
+
+  .project-dot {
+    width: 0.7rem;
+    height: 0.7rem;
+    flex: 0 0 0.7rem;
+  }
+
+  /* ========================================
+     FOOTER
+  ======================================== */
+
+  .footer-section {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: calc(100% - 2.5rem);
+    height: auto;
+    margin: 2rem auto 1rem;
+  }
+
+  .footer-brand {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    min-height: 4rem;
+    padding: 0.8rem 1rem;
+    border-right: 0;
+    border-bottom: 1px solid #eeeeee;
+  }
+
+  .footer-logo {
+    gap: 0.4rem;
+  }
+
+  .footer-logo img {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .footer-logo span {
+    font-size: 0.7rem;
+  }
+
+  .footer-brand p {
+    font-size: 0.45rem;
+    line-height: 1.2;
+  }
+
+  .footer-navigation {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(5, 2.8rem);
+    height: auto;
+  }
+
+  .footer-nav-top,
+  .footer-nav-bottom {
+    display: contents;
+  }
+
+  .footer-navigation a {
+    min-width: 0;
+    height: 2.8rem;
+    border-right: 1px solid #eeeeee;
+    border-bottom: 1px solid #eeeeee;
+    font-family: "Inter", sans-serif;
+    font-size: 0.6rem;
+  }
+
+  .footer-navigation a:nth-child(5) {
+    border-right: 1px solid #eeeeee;
+  }
+
+  .footer-navigation a:last-child {
+    border-right: 0;
+  }
+
+  .footer-globe img {
+    width: 0.9rem;
+    height: 0.9rem;
+  }
+}
+
+/* ========================================
+   MOBILE MENU - FINAL
+======================================== */
+
+@media (max-width: 767px) {
+  /* HEADER NORMAL */
+  .header {
+    position: absolute;
+    top: 15px;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+  }
+
+  .header-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    width: calc(100% - 46px);
+    height: 46px;
+    margin: 0 auto;
+
+    border: 2px solid #ffffff;
+    box-sizing: border-box;
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+    min-width: 0;
+    padding: 0 12px;
+    border-right: 2px solid #ffffff;
+  }
+
+  .logo-icon {
+    width: 27px;
+    height: 27px;
+  }
+
+  .logo-name {
+    margin-left: 6px;
+    font-size: 10px;
+    white-space: nowrap;
+  }
+
+  .logo-tagline {
+    display: none;
+  }
+
+  /* TOMBOL MENU */
+  .mobile-menu-button,
+  .mobile-close-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 100%;
+
+    border: 0;
+    background: transparent;
+    color: #ffffff;
+
+    font-family: "Inter", sans-serif;
+    font-size: 10px;
+    cursor: pointer;
+  }
+
+  .mobile-close-button {
+    display: none;
+  }
+
+  /* ========================================
+     SAAT MENU TERBUKA
+  ======================================== */
+
+  .menu-open .header {
+    display: block;
+    position: fixed !important;
+    top: 0 !important;
+    right: 0 !important;
+    bottom: 0 !important;
+    left: 0 !important;
+
+    width: 100% !important;
+    height: 100vh !important;
+    padding: 30px 0;
+
+    background: #111111 !important;
+    overflow-y: auto;
+    z-index: 9999;
+    box-sizing: border-box;
+  }
+
+  .menu-open .header-container {
+    position: relative;
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    width: calc(100% - 40px);
+    height: 40px;
+    margin: 0 auto;
+
+    border: 2px solid #ffffff;
+    box-sizing: border-box;
+  }
+  .menu-open .mobile-menu-button {
+    display: none;
+  }
+
+  .menu-open .mobile-close-button {
+    display: flex;
+  }
+
+  /* ========================================
+     NAVIGATION TERBUKA
+  ======================================== */
+
+  .menu-open .main-navigation {
+    display: flex;
+    flex-direction: column;
+
+    position: absolute;
+    top: 78px;
+    left: 0;
+
+    width: 100%;
+    height: auto;
+    margin: 0;
+
+    background: transparent;
+    box-sizing: border-box;
+  }
+
+  .menu-open .main-navigation a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 58px;
+    flex: 0 0 58px;
+
+    border: 2px solid #ffffff;
+    border-bottom: 0;
+
+    background: #111111;
+    color: #ffffff;
+
+    font-family: "Inter", sans-serif;
+    font-size: 10px;
+    text-decoration: none;
+    box-sizing: border-box;
+  }
+
+  .menu-open .main-navigation a:last-child {
+    border-bottom: 2px solid #ffffff;
+  }
+
+  .menu-open .main-navigation a:last-child {
+    border-bottom: 2px solid #ffffff;
+  }
+
+  /* GLOBE SELALU PALING BAWAH */
+  .menu-open .nav-language {
+    order: 10;
+  }
+
+  .menu-open .nav-language img {
+    width: 16px;
+    height: 16px;
+  }
+
+  /* SEMUA LINK URUT SESUAI FIGMA */
+  .menu-open .nav-about {
+    order: 1;
+  }
+
+  .menu-open .nav-services {
+    order: 2;
+  }
+
+  .menu-open .nav-cases {
+    order: 3;
+  }
+
+  .menu-open .nav-team {
+    order: 4;
+  }
+
+  .menu-open .nav-boost {
+    order: 5;
+  }
+
+  .menu-open .nav-products {
+    order: 6;
+  }
+
+  .menu-open .nav-book {
+    order: 7;
+  }
+
+  .menu-open .nav-blog {
+    order: 8;
+  }
+}
+
+/* ========================================
+   HERO CONTENT - MOBILE FIGMA
+======================================== */
+
+@media (max-width: 767px) {
+  /* HERO */
+  .hero-section {
+    min-height: 580px;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .hero-container {
+    position: relative;
+    width: 100%;
+    max-width: none;
+    min-height: 580px;
+    margin: 0;
+  }
+
+  /* TAHUN 2023 */
+  .hero-year {
+    position: absolute;
+    top: 123px;
+    left: 70%;
+    gap: 10px;
+    width: max-content;
+    transform: translateX(-50%);
+  }
+
+  .hero-year .year-gradient {
+    font-size: 30px;
+  }
+
+  .hero-year p {
+    width: 80px;
+    font-size: 10px;
+    line-height: 1.2;
+    transform: none;
+  }
+
+  /* KONTEN UTAMA */
+  .hero-main {
+    position: absolute;
+    top: 205px;
+    left: 22px;
+    right: auto;
+    width: calc(100% - 44px);
+  }
+
+  .hero-heading {
+    width: 100%;
+  }
+
+  .hero-heading h1 {
+    margin: 0;
+    font-size: 30px;
+    line-height: 1.15;
+  }
+
+  /* GARIS DEKORASI */
+  .hero-decoration {
+    top: -25px;
+    right: 100px;
+    width: 70px;
+    height: 40px;
+  }
+
+  /* SUBTITLE */
+  .hero-subtitle {
+    position: absolute;
+    top: 78px;
+    left: 0;
+    width: 220px;
+    font-size: 11px;
+    line-height: 1;
+  }
+
+  /* PESAN DESKRIPSI */
+  .hero-message {
+    position: absolute;
+    top: 345px;
+    left: 22px;
+    right: auto;
+    width: calc(100% - 44px);
+  }
+
+  .hero-message p {
+    width: 100%;
+    margin: 0;
+    font-size: 13px;
+    line-height: 1.2;
+  }
+
+  /* LINK HERO */
+  .hero-links {
+    grid-template-columns: 1fr 1fr;
+    gap: 28px 36px;
+    padding: 40px 22px;
+  }
+
+  .hero-links a {
+    font-size: 10px;
+    padding-bottom: 12px;
   }
 }
