@@ -39,12 +39,15 @@ a {
 
 .header-container {
   display: grid;
-  grid-template-columns: 430px minmax(0, 1fr);
-  width: 1250px;
-  max-width: calc(95% - 90px);
-  height: 134px;
-  margin: 0 auto;
+  grid-template-columns: 323px minmax(0, 1fr);
+
+  width: 85.6%;
+  max-width: none;
+  height: 100px;
+
+  margin: 4rem auto 0;
   border: 2px solid #ffffff;
+  box-sizing: border-box;
 }
 
 /* ==============================
@@ -61,8 +64,8 @@ a {
 
 .logo-icon {
   flex: 0 0 auto;
-  width: 32px;
-  height: 32px;
+  width: 25px;
+  height: 25px;
   object-fit: contain;
 }
 
@@ -70,30 +73,34 @@ a {
   flex: 0 0 auto;
   margin-left: 6px;
   font-family: "Unbounded", sans-serif;
-  font-size: 16px;
+  font-size: 11px;
   font-weight: 600;
   line-height: 1;
   white-space: nowrap;
 }
 
 .logo-tagline {
+  flex: 0 0 135px;
   width: 135px;
-  margin-left: 50px;
+  height: 24px;
+  margin-left: 30px;
+
   font-family: "Unbounded", sans-serif;
   font-size: 10px;
   font-weight: 600;
-  line-height: 1;
+  line-height: 1.2;
+  letter-spacing: -0.4px;
+  white-space: nowrap;
 }
 
 /* ==============================
    NAVIGATION
 ============================== */
-
 .main-navigation {
   display: grid;
   grid-template-rows: 1fr 1fr;
   min-width: 0;
-  height: 130px;
+  height: 98px;
 }
 
 .navigation-top,
@@ -128,7 +135,7 @@ a {
   border-right: 2px solid #ffffff;
   border-bottom: 2px solid #ffffff;
   font-family: "Unbounded", sans-serif;
-  font-size: 10px;
+  font-size: 9px;
   font-weight: 400;
   line-height: 1;
   transition: opacity 0.2s ease;
@@ -1325,5 +1332,509 @@ a {
   .experience-column {
     max-width: 100%;
     font-size: 11px;
+  }
+}
+
+/* ========================================
+   PROJECTS SECTION
+======================================== */
+
+.projects-section {
+  position: relative;
+  width: 100%;
+  min-height: 700px; /* Sebelumnya 820px */
+
+  padding: 70px 7.2% 0;
+  background: #111111;
+  box-sizing: border-box;
+}
+
+/* JUDUL PROJECTS */
+
+.projects-heading {
+  position: relative;
+  margin-bottom: 32px;
+}
+
+.projects-heading h2 {
+  position: relative;
+  margin: 0;
+  font-family: "Unbounded", sans-serif;
+  font-size: 54px;
+  font-style: light;
+  width: 495px;
+  height: 134px;
+  font-weight: 300;
+  line-height: 100%;
+  letter-spacing: 0%;
+  background: linear-gradient(90deg, #c6d7ed 0%, #f981e5 50%, #bd7cff 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.projects-heading img {
+  position: absolute;
+  width: 106px;
+  height: 60px;
+  top: -40px;
+  left: 385px;
+}
+
+/* ========================================
+   PROJECT CARDS
+======================================== */
+
+.projects-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  height: 300px;
+  margin: 0;
+  padding: 0;
+}
+
+.project-card {
+  position: relative;
+  height: 303px;
+  padding: 28px 36px;
+  box-sizing: border-box;
+  overflow: hidden;
+  color: #ffffff;
+}
+
+/* GRADIENT PROJECT 1 */
+
+.project-food {
+  background:
+    radial-gradient(
+      ellipse at 70% 90%,
+      #ff426b 0%,
+      #ff9c31 17%,
+      transparent 45%
+    ),
+    radial-gradient(
+      ellipse at 20% 15%,
+      #8e2e88 0%,
+      #403064 48%,
+      transparent 75%
+    ),
+    linear-gradient(130deg, #9e357f 0%, #251d42 55%, #030303 100%);
+}
+
+/* GRADIENT PROJECT 2 */
+
+.project-tech {
+  background:
+    radial-gradient(ellipse at 45% 100%, #d57cae 0%, transparent 48%),
+    radial-gradient(
+      ellipse at 10% 20%,
+      #075c9b 0%,
+      #182c54 45%,
+      transparent 75%
+    ),
+    linear-gradient(130deg, #68233e 0%, #06182a 50%, #030303 100%);
+}
+
+/* CATEGORY */
+
+.project-category {
+  display: block;
+  margin-bottom: 38px;
+  font-family: "Inter", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  color: #e4cce8;
+}
+
+/* PROJECT TITLE */
+
+.project-card h3 {
+  margin: 0 0 15px;
+  font-family: "Unbounded", sans-serif;
+  font-size: 40px;
+  font-weight: 300;
+  line-height: 1.25;
+  letter-spacing: -1px;
+  color: #ffffff;
+}
+
+/* PROJECT DESCRIPTION */
+
+.project-card p {
+  width: 264px;
+  height: 51px;
+
+  margin: 0;
+
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 0;
+
+  color: #e5dce7;
+}
+
+/* ========================================
+   PROJECT NAVIGATION
+======================================== */
+
+.projects-navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 230px;
+  height: 46px;
+  margin: 9px auto 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* TOMBOL PANAH */
+
+.project-arrow {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 52px;
+  height: 46px;
+  padding: 0;
+
+  border: none;
+  background: transparent;
+  color: #ffffff;
+
+  font-family: Arial, sans-serif;
+  font-size: 32px;
+  font-weight: 300;
+  line-height: 1;
+
+  cursor: pointer;
+  z-index: 1;
+}
+
+/* ========================================
+   ORANGE BRACKET KIRI
+======================================== */
+
+.project-arrow:first-child {
+  background:
+    linear-gradient(90deg, #e58c19 0%, #e58c19 65%, rgba(229, 140, 25, 0) 100%)
+      top left / 100% 2px no-repeat,
+    linear-gradient(90deg, #e58c19 0%, #e58c19 65%, rgba(229, 140, 25, 0) 100%)
+      bottom left / 100% 2px no-repeat,
+    linear-gradient(#e58c19, #e58c19) left / 2px 100% no-repeat;
+}
+
+/* GLOW HALUS KIRI */
+
+.project-arrow:first-child::after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  right: 0;
+  width: 22px;
+  height: calc(100% - 4px);
+  filter: blur(5px);
+  pointer-events: none;
+}
+
+/* ========================================
+   ORANGE BRACKET KANAN
+======================================== */
+
+.project-arrow:last-child {
+  background:
+    linear-gradient(270deg, #e58c19 0%, #e58c19 65%, rgba(229, 140, 25, 0) 100%)
+      top right / 100% 2px no-repeat,
+    linear-gradient(270deg, #e58c19 0%, #e58c19 65%, rgba(229, 140, 25, 0) 100%)
+      bottom right / 100% 2px no-repeat,
+    linear-gradient(#e58c19, #e58c19) right / 2px 100% no-repeat;
+}
+
+/* GLOW HALUS KANAN */
+
+.project-arrow:last-child::after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 22px;
+  height: calc(100% - 4px);
+  filter: blur(5px);
+  pointer-events: none;
+}
+
+/* ========================================
+   DOT
+======================================== */
+
+.project-dot {
+  width: 12px;
+  height: 12px;
+  flex: 0 0 12px;
+
+  border-radius: 50%;
+  background: #dddddd;
+}
+
+.project-dot.active {
+  background: #e58c19;
+}
+
+/* ========================================
+   FOOTER
+======================================== */
+
+.footer-section {
+  display: grid;
+  grid-template-columns: 323px 1fr;
+
+  width: 85.6%;
+  height: 100px;
+
+  margin: 25px auto 50px;
+
+  border: 1px solid #eeeeee;
+  box-sizing: border-box;
+  background: #111111;
+}
+
+/* ========================================
+   FOOTER BRAND
+======================================== */
+
+.footer-brand {
+  display: flex;
+  align-items: center;
+
+  gap: 30px;
+  padding: 0 23px;
+
+  border-right: 1px solid #eeeeee;
+  box-sizing: border-box;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+
+  gap: 9px;
+  white-space: nowrap;
+}
+
+.footer-logo img {
+  width: 25px;
+  height: 25px;
+
+  object-fit: contain;
+}
+
+.footer-logo span {
+  font-family: "Unbounded", sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 1;
+
+  color: #d9bce9;
+}
+
+.footer-brand p {
+  margin: 0;
+
+  font-family: "Unbounded", sans-serif;
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 1;
+
+  color: #d9bce9;
+}
+
+/* ========================================
+   FOOTER NAVIGATION
+======================================== */
+
+.footer-navigation {
+  display: grid;
+  grid-template-rows: 50px 49px;
+
+  min-width: 0;
+  height: 99px;
+}
+
+/* ========================================
+   BARIS ATAS
+======================================== */
+
+.footer-nav-top {
+  display: grid;
+
+  grid-template-columns:
+    157fr
+    248fr
+    199.58fr
+    155fr
+    67fr;
+
+  min-width: 0;
+}
+
+.footer-nav-top a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  min-width: 0;
+
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+
+  font-family: "Unbounded", sans-serif;
+  font-size: 9px;
+  font-weight: 400;
+  line-height: 1;
+  text-decoration: none;
+
+  color: #d98ce8;
+}
+
+.footer-nav-top a:last-child {
+  border-right: none;
+}
+
+/* ========================================
+   BARIS BAWAH
+======================================== */
+
+.footer-nav-bottom {
+  display: grid;
+
+  grid-template-columns:
+    291fr
+    208fr
+    134fr
+    192fr;
+
+  min-width: 0;
+}
+
+.footer-nav-bottom a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  min-width: 0;
+
+  border-right: 1px solid #eeeeee;
+
+  font-family: "Unbounded", sans-serif;
+  font-size: 9px;
+  font-weight: 400;
+  line-height: 1;
+  text-decoration: none;
+
+  color: #d98ce8;
+}
+
+.footer-nav-bottom a:last-child {
+  border-right: none;
+}
+
+/* ========================================
+   HOVER
+======================================== */
+
+.footer-navigation a {
+  transition: opacity 0.2s ease;
+}
+
+.footer-navigation a:hover {
+  opacity: 0.5;
+}
+
+/* ========================================
+   LANGUAGE ICON
+======================================== */
+
+.footer-globe img {
+  display: block;
+
+  width: 14px;
+  height: 14px;
+
+  object-fit: contain;
+}
+
+/* ========================================
+   RESPONSIVE
+======================================== */
+
+@media (max-width: 900px) {
+  .projects-section {
+    padding: 60px 5% 0;
+  }
+
+  .projects-heading h2 {
+    font-size: 32px;
+  }
+
+  .projects-cards {
+    height: auto;
+  }
+
+  .project-card {
+    height: 230px;
+    padding: 22px;
+  }
+
+  .project-card h3 {
+    font-size: 23px;
+  }
+
+  .footer-section {
+    grid-template-columns: 1fr;
+    height: auto;
+  }
+
+  .footer-brand {
+    min-height: 100px;
+    border-right: none;
+    border-bottom: 1px solid #eeeeee;
+  }
+}
+
+@media (max-width: 600px) {
+  .projects-heading h2 {
+    font-size: 25px;
+  }
+
+  .projects-heading img {
+    left: 190px;
+    width: 55px;
+  }
+
+  .projects-cards {
+    grid-template-columns: 1fr;
+    height: auto;
+  }
+
+  .project-card {
+    height: 240px;
+  }
+
+  .project-card h3 {
+    font-size: 25px;
+  }
+
+  .footer-navigation {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 45px);
+  }
+
+  .footer-navigation a:nth-child(5) {
+    border-right: 1px solid #eeeeee;
   }
 }
